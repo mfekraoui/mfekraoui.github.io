@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meriem Fekraoui | Data Analyst</title>
+
+<style>
+:root {
+  --black: #050505;
+  --turquoise: #00c9c9;
+  --white: #f5f5f5;
+  --grey: #a7a7a7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 7%;
+  border-bottom: 1px solid #242424;
+  position: sticky;
+  top: 0;
+  background: rgba(5,5,5,.96);
+  z-index: 10;
+}
+
+.logo {
+  color: var(--turquoise);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--turquoise);
+}
+
+section {
+  padding: 90px 9%;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tag {
+  color: var(--turquoise);
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(45px, 8vw, 85px);
+  line-height: 1.05;
+  font-weight: 500;
+  max-width: 850px;
+}
+
+h1 span, h2 span {
+  color: var(--turquoise);
+}
+
+.hero p {
+  color: var(--grey);
+  margin-top: 25px;
+  max-width: 550px;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid var(--turquoise);
+  color: var(--turquoise);
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 30px;
+  width: fit-content;
+}
+
+.button:hover {
+  background: var(--turquoise);
+  color: var(--black);
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.about {
+  background: #101010;
+}
+
+.about p {
+  max-width: 800px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+.skill {
+  border: 1px solid #333;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.skill h3 {
+  color: var(--turquoise);
+  margin-bottom: 10px;
+}
+
+.skill p {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.projects {
+  background: #101010;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid #343434;
+  padding: 25px;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+.project:hover {
+  border-color: var(--turquoise);
+  transform: translateY(-5px);
+}
+
+.project .number {
+  color: var(--turquoise);
+  font-size: 14px;
+}
+
+.project h3 {
+  margin: 12px 0;
+  font-size: 21px;
+}
+
+.project p {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.project strong {
+  color: var(--turquoise);
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  color: var(--grey);
+  margin: 12px 0;
+}
+
+.contact a {
+  color: var(--turquoise);
+  text-decoration: none;
+}
+
+footer {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding: 25px;
+  color: var(--grey);
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  section {
+    padding: 65px 7%;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Meriem FEKRAOUI</div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="accueil">
+  <div class="tag">PORTFOLIO PROFESSIONNEL</div>
+  <h1>DATA ANALYST<br><span>TRANSFORMER LES DONNÉES EN DÉCISIONS</span></h1>
+  <p>
+    Bonjour, je suis Meriem Fekraoui, Data Analyst en formation.
+    Je transforme les données en informations utiles pour éclairer
+    la prise de décision.
+  </p>
+  <a class="button" href="#projets">Découvrir mes projets →</a>
+</section>
+
+<section class="about" id="apropos">
+  <h2>À PROPOS <span>DE MOI</span></h2>
+  <p>
+    Je suis Data Analyst, actuellement en formation chez OpenClassrooms.
+    Passionnée par l'analyse des données, je développe mes compétences
+    en Python, SQL, Power BI, Excel et Machine Learning.
+  </p>
+  <p>
+    À travers mes projets, j'apprends à collecter, nettoyer, analyser
+    et visualiser les données afin de produire des informations utiles
+    à la prise de décision.
+  </p>
+</section>
+
+<section id="competences">
+  <h2>MES <span>COMPÉTENCES</span></h2>
+  <div class="skills">
+    <div class="skill">
+      <h3>01 — PYTHON</h3>
+      <p>Pandas, nettoyage, statistiques, visualisation et Machine Learning.</p>
+    </div>
+    <div class="skill">
+      <h3>02 — SQL</h3>
+      <p>Requêtes, jointures et gestion de bases de données relationnelles.</p>
+    </div>
+    <div class="skill">
+      <h3>03 — POWER BI</h3>
+      <p>Tableaux de bord interactifs, DAX et indicateurs KPI.</p>
+    </div>
+    <div class="skill">
+      <h3>04 — EXCEL</h3>
+      <p>Tableaux croisés dynamiques, formules et reporting.</p>
+    </div>
+    <div class="skill">
+      <h3>05 — DBT</h3>
+      <p>Transformation et modélisation des données.</p>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projets">
+  <h2>MES <span>PROJETS</span></h2>
+  <div class="project-grid">
+
+    <article class="project">
+      <div class="number">PROJET 01 — MACHINE LEARNING</div>
+      <h3>Détection de faux billets</h3>
+      <p>
+        Développement d'un modèle capable de distinguer les billets
+        authentiques des billets contrefaits à partir de leurs
+        caractéristiques physiques.
+      </p>
+      <p><strong>Outils :</strong> Python, Pandas, Scikit-learn.</p>
+      <p><strong>Résultat :</strong> 99,33 % d'accuracy sur le jeu de test.</p>
+    </article>
+
+    <article class="project">
+      <div class="number">PROJET 02 — À COMPLÉTER</div>
+      <h3>Analyse de données</h3>
+      <p>Présentation du contexte, de l'objectif et des résultats du projet.</p>
+    </article>
+
+    <article class="project">
+      <div class="number">PROJET 03 — À COMPLÉTER</div>
+      <h3>Business Intelligence</h3>
+      <p>Présentation du tableau de bord et des indicateurs analysés.</p>
+    </article>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>RESTONS EN <span>CONTACT</span></h2>
+  <p>Vous souhaitez échanger sur une opportunité professionnelle ?</p>
+  <p>Email : <a href="mailto:fekraoui.meriem@gmail.com">fekraoui.meriem@gmail.com</a></p>
+  <p>LinkedIn : <a href="https://www.linkedin.com/in/meriem-fekraoui-b689403a0/" target="_blank">Mon profil LinkedIn</a></p>
+</section>
+
+<footer>
+  © 2026 Meriem Fekraoui — Portfolio Data Analyst
+</footer>
+
+</body>
+</html>
