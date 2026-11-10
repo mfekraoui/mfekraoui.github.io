@@ -66,20 +66,21 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .hero .button {
   display: inline-block;
-}
-
-.hero {
-  align-items: flex-start;
-}
-
-  .hero .button {
   margin-right: 12px;
   margin-top: 30px;
 }
+
+  .hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .tag {
   color: var(--turquoise);
   letter-spacing: 3px;
@@ -287,10 +288,12 @@ footer {
     Je transforme les données en informations utiles pour éclairer
     la prise de décision.
   </p>
+<div class="hero-buttons">
   <a class="button" href="#projets">Découvrir mes projets →</a>
-  <a class="button" href="https://github.com/mfekraoui/mfekraoui.github.io/raw/refs/heads/main/CV_fekraoui_data.pdf" target="_blank">
-  Télécharger mon CV ↓
+<a class="button" href="https://github.com/mfekraoui/mfekraoui.github.io/raw/refs/heads/main/CV_fekraoui_data.pdf" target="_blank">
+    Télécharger mon CV ↓
 </a>
+  </div>
 </section>
 
 <section class="about" id="apropos">
