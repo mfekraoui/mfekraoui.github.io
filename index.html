@@ -274,6 +274,28 @@ footer {
   margin-top: 25px;
   text-align: left;
 }
+ .back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--turquoise);
+  color: var(--black);
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px);
+}
 </style>
 </head>
 
@@ -749,5 +771,6 @@ footer {
   © 2026 Meriem Fekraoui — Portfolio Data Analyst
 </footer>
 
+ <a href="#accueil" class="back-to-top">↑</a>
 </body>
 </html>
